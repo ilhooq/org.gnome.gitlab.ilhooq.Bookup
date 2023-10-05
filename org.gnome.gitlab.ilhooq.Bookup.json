@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.gitlab.ilhooq.Bookup",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "44",
+    "runtime-version" : "45",
     "sdk" : "org.gnome.Sdk",
     "command" : "bookup",
     "finish-args" : [
@@ -24,17 +24,6 @@
         "*.a"
     ],
     "modules" : [
-        {
-            "name" : "gtksourceview",
-            "buildsystem" : "meson",
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/gtksourceview.git",
-                    "tag" : "5.8.0"
-                }
-            ]
-        },
         {
             "name" : "discount",
             "buildsystem" : "simple",
