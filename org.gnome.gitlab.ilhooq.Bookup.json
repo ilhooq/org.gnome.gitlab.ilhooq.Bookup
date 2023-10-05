@@ -59,8 +59,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/ilhooq/bookup.git",
-                    "tag" : "v0.1.6",
-                    "commit": "7e767814cb1c6b68b63eeaf12179ab336e53eb8c"
+                    "tag" : "v0.2.0",
+                    "commit": "abe842cf7cdde46e76cab04fd55d0d8dff6e96b1"
                 }
             ]
         }
