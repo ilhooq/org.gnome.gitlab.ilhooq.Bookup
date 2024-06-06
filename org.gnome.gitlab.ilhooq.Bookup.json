@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.gitlab.ilhooq.Bookup",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "45",
+    "runtime-version" : "46",
     "sdk" : "org.gnome.Sdk",
     "command" : "bookup",
     "finish-args" : [
@@ -48,8 +48,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/ilhooq/bookup.git",
-                    "tag" : "v1.0.1",
-                    "commit": "605f1751be60caafeaa69ed256133d092cb1e320"
+                    "tag" : "v1.1.0",
+                    "commit": "f0135533d9557e01762b8b1c9ba42ff20f72c687"
                 }
             ]
         }
