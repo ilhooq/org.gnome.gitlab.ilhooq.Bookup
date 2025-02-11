@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.gitlab.ilhooq.Bookup",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "46",
+    "runtime-version" : "47",
     "sdk" : "org.gnome.Sdk",
     "command" : "bookup",
     "finish-args" : [
@@ -35,8 +35,12 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://www.pell.portland.or.us/~orc/Code/discount/discount-2.2.7.tar.bz2",
-                    "sha256" : "b1262be5d7b04f3c4e2cee3a0937369b12786af18f65f599f334eefbc0ee9508"
+                    "url" : "https://www.pell.portland.or.us/~orc/Code/discount/discount-2.2.7d.tar.bz2",
+                    "sha256" : "12a2041e96ae8cde17e08ff1a215d331580a5c58688daa5a18842b6bb5b77b52"
+                },
+                {
+                    "type": "patch",
+                    "path": "discount-2.2.7-fix-gcc14-compile-issue.patch"
                 }
             ]
         },
@@ -48,8 +52,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/ilhooq/bookup.git",
-                    "tag" : "v1.1.0",
-                    "commit": "f0135533d9557e01762b8b1c9ba42ff20f72c687"
+                    "tag" : "v1.1.1",
+                    "commit": "876cad6bc3f62a193a7ae40086c09a5478c453b1"
                 }
             ]
         }
