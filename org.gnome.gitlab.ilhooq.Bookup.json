@@ -1,10 +1,10 @@
 {
-    "app-id" : "org.gnome.gitlab.ilhooq.Bookup",
-    "runtime" : "org.gnome.Platform",
-    "runtime-version" : "48",
-    "sdk" : "org.gnome.Sdk",
-    "command" : "bookup",
-    "finish-args" : [
+    "app-id": "org.gnome.gitlab.ilhooq.Bookup",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "48",
+    "sdk": "org.gnome.Sdk",
+    "command": "bookup",
+    "finish-args": [
         "--share=network",
         "--share=ipc",
         "--socket=fallback-x11",
@@ -12,7 +12,7 @@
         "--filesystem=home",
         "--device=dri"
     ],
-    "cleanup" : [
+    "cleanup": [
         "/include",
         "/lib/pkgconfig",
         "/man",
@@ -23,20 +23,20 @@
         "*.la",
         "*.a"
     ],
-    "modules" : [
+    "modules": [
         {
-            "name" : "discount",
-            "buildsystem" : "simple",
-            "build-commands" : [
+            "name": "discount",
+            "buildsystem": "simple",
+            "build-commands": [
                 "./configure.sh --prefix=/app --enable-all-features --with-fenced-code --shared",
                 "sed -e 's|/sbin/ldconfig|/sbin/ldconfig -n|' -i librarian.sh",
                 "make install"
             ],
-            "sources" : [
+            "sources": [
                 {
-                    "type" : "archive",
-                    "url" : "https://www.pell.portland.or.us/~orc/Code/discount/discount-2.2.7d.tar.bz2",
-                    "sha256" : "12a2041e96ae8cde17e08ff1a215d331580a5c58688daa5a18842b6bb5b77b52"
+                    "type": "archive",
+                    "url": "https://www.pell.portland.or.us/~orc/Code/discount/discount-2.2.7d.tar.bz2",
+                    "sha256": "12a2041e96ae8cde17e08ff1a215d331580a5c58688daa5a18842b6bb5b77b52"
                 },
                 {
                     "type": "patch",
@@ -45,15 +45,15 @@
             ]
         },
         {
-            "name" : "bookup",
-            "builddir" : true,
-            "buildsystem" : "meson",
-            "sources" : [
+            "name": "bookup",
+            "builddir": true,
+            "buildsystem": "meson",
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/ilhooq/bookup.git",
-                    "tag" : "v1.1.1",
-                    "commit": "876cad6bc3f62a193a7ae40086c09a5478c453b1",
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/ilhooq/bookup.git",
+                    "tag": "v1.1.2",
+                    "commit": "b219b363a839b59bd707e9d0917ff12b0d2b3c16",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$",
